@@ -1,0 +1,129 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: #444444;
+    margin: 0;
+}
+.valute{
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+}
+.valute p + p{
+    color: white;
+    width: 50%;
+}
+.valute img + p{
+    width: 20%;
+    font-size: 1.2em;
+}
+.list{
+    height: 85%;
+    width: 85%;
+    text-align: center;
+    margin-left: 8%;
+    overflow: scroll;
+    background-color: rgba(154, 148, 148, 0.7);
+    border-radius: 10px;
+}
+.valq > h1{
+    height: 10%;
+    text-align: center;
+    padding: 10px;
+    font-family: 'Oswald', sans-serif;
+    color: white;
+}
+.valq{
+    display: flex;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+}
+.pageList, .pageCalc{
+    height: 90vh;
+}
+.tabBar{
+    height: 5vh;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+
+}
+.tabBar button{
+    width: 100px;
+    height: 30px;
+    background: #444444;
+    color: white;
+    font-size: 20px;
+    border-radius: 15px;
+}
+
+.hide{
+    display: none;
+}
+.valute img{
+    width: 40px;
+    margin-left: 10px;
+}
+html {
+    height:100%;
+}
+
+input{
+    width: 100%;
+    height: 60px;
+    border: none;
+    font-size: 30px;
+    outline: none;
+    text-align: right;
+}
+.input {
+    grid-column: 1/-1;
+    padding: 0;
+}
+
+.back{
+    grid-column: 3/-1;
+}
+.equal{
+    grid-column: 4;
+    grid-row:6/8;
+}
+.zero{
+    grid-column: 1/3;
+}
+.container{
+    margin-left: 38%;
+    display: grid;
+    grid-gap: 4px;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    background-color: #23232390;
+    padding: 4px;
+    border-radius: 30px;
+    max-width: 360px;
+    font-style:italic;
+}
+.item{
+    background-color: rgba(255, 255, 255, 0.729);
+    color: rgb(0, 0, 0);
+    border-radius: 40px;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 22px;
+    cursor: pointer;
+    font-weight: bold;
+}
+form{
+    max-width: 100%;
+    border-radius: 25px;
+}
+
+#preloader.preloader-hidden{
+    display: none;
+}
